@@ -18,13 +18,9 @@ class conv2d:
         #need to set weights out
 
         #need to set up forward pass and backpass
-
     def forward():
         return "test"
 
 
     def backward():
         return "test"
-
-
-        
