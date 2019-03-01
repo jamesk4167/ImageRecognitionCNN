@@ -1,16 +1,12 @@
+class flatten:
 
-class NeuralNetwork():
-
-
-    def init():
+    def __init__(self):
         return "test"
 
 
-
     def forward():
-
-        return "Test"
-
+        return "test"
 
     def backward():
+
         return "test"

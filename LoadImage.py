@@ -14,7 +14,7 @@ def init():
 	loaded_model_json = json_file.read()
 	json_file.close()
 	loaded_model = model_from_json(loaded_model_json)
-	#load woeights into new model
+	#load weights into new model
 	loaded_model.load_weights("model.h5", by_name=True)
 	print("Loaded Model from disk")
 
