@@ -4,9 +4,9 @@ class flatten:
         return "test"
 
 
-    def forward():
-        return "test"
+        def forward():
+            return "test"
 
-    def backward():
+        def backward():
 
-        return "test"
+            return "test"

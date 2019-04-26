@@ -1,11 +1,11 @@
 class MaxPooling:
 
-    def __init___():
+    def __init___(self, Pool_size):
         return "Test"
 
 
     def forward():
-        return "Test"
+            return "Test"
 
     def backward():
-        return "Test"
+            return "Test"

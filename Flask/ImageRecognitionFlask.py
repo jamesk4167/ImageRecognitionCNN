@@ -7,16 +7,14 @@ import numpy as np
 #for importing our keras model
 import keras.models
 #for regular expressions, saves time dealing with string data
-import re
 
 
-from LoadImage import init
 #system level operations (like loading files)
 import sys 
 #for reading operating system data
 import os
 sys.path.append(os.path.abspath("./model"))
-from LoadImage import * 
+#from LoadImage import * 
 
 
 app = Flask(__name__)
@@ -36,14 +34,18 @@ def processImage(image, target_size):
 print("load images")
 
 
+@app.route("/about")
+def about():
+	return render_template("about.html")
+
 
 @app.route("/")
+@app.route("/home")
 def index():
     return render_template("index.html")
 
 
-global model, graph
-model, graph = init()
+"""
 
 def process_image(image_data):
     imagestring = re.search(r'base64,(.*',image_data1).group(1)
@@ -77,7 +79,7 @@ def predict():
 		#convert the response to a string
 		response = np.array_str(np.argmax(out,axis=1))
 		return response	
-
+"""
 
 
 

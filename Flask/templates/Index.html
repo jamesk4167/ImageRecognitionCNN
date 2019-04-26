@@ -12,10 +12,10 @@
         
     </head>
     <body>
-        <input id="image_selector" type="file"/>
-        <button id="Predict">Predict </button>
+        <input id="image_selector" type="file" accept="image/*;capture=camera"/>
+        <button id="predict">Predict </button>
         <p>Prediction <span id="prediction"> </p>
-        <img id="selected-image" src="">
+        <img id="selected_image" src="">
         
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script>
@@ -32,7 +32,7 @@
             $("#prediction").text("")
             });
 
-            $("Predict").click(function(event){
+            $("predict").click(function(event){
                 let message = {
                 image: base64Image
                 }
